@@ -51,7 +51,7 @@ function App() {
             return (
               <div
                 key={item.id} 
-                onClick={()=>{setImageIndex(item.id)}}
+                onClick={()=>{setImageIndex(Number(item.id))}}
                 className={`button ${imageIndex == item.id ? "active" : ""} `}
               ></div>
             );
